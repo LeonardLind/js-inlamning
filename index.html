@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <div id="app">
+    <section class="inputs-section">
+      <input type="text" id="toDo" placeholder="What will I do">
+      <input type="date" id="toDoDate">
+      <input type="time" id="toDoTime">
+    </section>
+    <div class="btn-section">
+      <button id="saveobject">Spara till lista</button>
+      <button id="clear">clear cache</button>
+    </div>
+    <div>
+      <button id="sort-default">Sort: Default Order</button>
+      <button id="sort-reverse">Sort: Reverse Order</button>
+    </div>
+    <div>
+      <h1>List of things you havent done</h1>
+      <ul id="todo-list"></ul> 
+    </div>
+    <div class="done-list">
+      <h1>List of things you done</h1>
+      <ul id="todo-done"></ul>
+    </div> 
+
+  </div>
+
+  <script type="module" src="src/main.js"></script> 
+</body>
+</html>
